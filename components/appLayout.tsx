@@ -1,6 +1,6 @@
 //Layout of the entire application's home screen
 import { Box } from '@chakra-ui/layout'
-import Sidebar from './sidebar'
+import Sidebar from './sidebar/sidebar'
 
 
 const PlayerLayout = ({ children }) => {

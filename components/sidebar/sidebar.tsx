@@ -1,5 +1,8 @@
 import NextImage from 'next/image'
 import NextLink from 'next/link'
+import Navmenu from './navmenu'
+import Usermenu from './usermenu'
+import Playlist from './playlist'
 import {
     Box,
     List,
@@ -10,15 +13,9 @@ import {
     LinkBox,
     LinkOverlay,
   } from '@chakra-ui/layout'
-  import {
-    MdHome,
-    MdSearch,
-    MdLibraryMusic,
-    MdPlaylistAdd,
-    MdFavorite,
-  } from 'react-icons/md'
+  
 
-const Sidebar =(props) => {
+const Sidebar =() => {
   return(
     <Box 
     width="100%"
@@ -28,9 +25,12 @@ const Sidebar =(props) => {
     color="gray">
       <Box paddingY="20px" height="100%">
       <Box width="120px" marginBottom="20px" paddingX="20px">
-      <NextImage src="/vibe.png" height={1000} width={800} />
-
+      <NextImage src="/logo.svg" height={60} width={120} />
       </Box>
+      <Navmenu/>
+      <Usermenu/>
+      <Divider color="gray.800" />
+       <Playlist/>  
       </Box>
       
 
